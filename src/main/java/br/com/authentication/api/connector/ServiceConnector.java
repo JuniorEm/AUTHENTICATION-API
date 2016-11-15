@@ -9,10 +9,15 @@ import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
+/**
+ * Connector for service calls
+ * @author Junior
+ *
+ */
 @Component
 public class ServiceConnector {
-	@Value("${service.prefix}")
-	private String prefix;
+	
+	@Value("${service.prefix}") private String prefix;
 	
 	public <E> E get(final String service, final Class<E> type) {
 		final RestTemplate template = new RestTemplate();

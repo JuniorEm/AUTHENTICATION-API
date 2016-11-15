@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import br.com.authentication.api.services.entity.User;
 
 /**
- * The User DATA ACCESS OBJECT CLASS
+ * User Data Access Object
  * @author Junior
  *
  */
