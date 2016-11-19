@@ -1,4 +1,4 @@
-package br.com.authentication.api.test.services.json.util;
+package br.com.gmf.api.test.services.json.util;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

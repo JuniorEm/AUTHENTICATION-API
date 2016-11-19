@@ -1,4 +1,4 @@
-package br.com.authentication.api.test.services;
+package br.com.gmf.api.test.services;
 
 
 import static org.junit.Assert.assertEquals;
@@ -9,8 +9,8 @@ import java.io.IOException;
 
 import org.junit.Test;
 
-import br.com.authentication.api.services.entity.User;
-import br.com.authentication.api.test.AbstractServiceTest;
+import br.com.gmf.api.services.entity.User;
+import br.com.gmf.api.test.AbstractServiceTest;
 
 /**
  * Test for user service.

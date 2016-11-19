@@ -1,4 +1,4 @@
-package br.com.authentication.api.test.services.json;
+package br.com.gmf.api.test.services.json;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -13,8 +13,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import br.com.authentication.api.services.entity.User;
-import br.com.authentication.api.test.services.json.util.JsonUtil;
+import br.com.gmf.api.services.entity.User;
+import br.com.gmf.api.test.services.json.util.JsonUtil;
 
 /**
  * Test for serialize and deserialize Json

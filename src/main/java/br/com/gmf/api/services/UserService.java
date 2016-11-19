@@ -1,10 +1,10 @@
-package br.com.authentication.api.services;
+package br.com.gmf.api.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.authentication.api.repository.UserRepository;
-import br.com.authentication.api.services.entity.User;
+import br.com.gmf.api.repository.UserRepository;
+import br.com.gmf.api.services.entity.User;
 
 /**
  * Service class for User

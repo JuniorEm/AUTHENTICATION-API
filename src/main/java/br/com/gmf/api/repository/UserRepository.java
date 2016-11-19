@@ -1,9 +1,9 @@
-package br.com.authentication.api.repository;
+package br.com.gmf.api.repository;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import br.com.authentication.api.services.entity.User;
+import br.com.gmf.api.services.entity.User;
 
 /**
  * User Data Access Object

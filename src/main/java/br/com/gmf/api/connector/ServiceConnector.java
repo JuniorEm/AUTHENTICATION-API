@@ -1,4 +1,4 @@
-package br.com.authentication.api.connector;
+package br.com.gmf.api.connector;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package br.com.authentication.api.test;
+package br.com.gmf.api.test;
 
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import br.com.authentication.api.connector.ServiceConnector;
+import br.com.gmf.api.connector.ServiceConnector;
 
 /**
  * Class config for Integrated Service Test.

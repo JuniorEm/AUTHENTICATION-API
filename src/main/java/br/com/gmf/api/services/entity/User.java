@@ -1,4 +1,4 @@
-package br.com.authentication.api.services.entity;
+package br.com.gmf.api.services.entity;
 
 import java.io.Serializable;
 
