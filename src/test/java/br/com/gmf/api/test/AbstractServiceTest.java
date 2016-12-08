@@ -4,6 +4,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -19,7 +20,7 @@ import br.com.gmf.api.connector.ServiceConnector;
 @ActiveProfiles("test")
 public abstract class AbstractServiceTest {
 	private @Autowired ServiceConnector serviceConnector;
-
+	
     protected final <E> E get(final String service, final Class<E> returnType) {
         return serviceConnector.get(service, returnType);
     }

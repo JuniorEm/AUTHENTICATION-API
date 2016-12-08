@@ -1,5 +1,7 @@
 package br.com.gmf.api.services.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,13 +19,13 @@ import io.swagger.annotations.ApiOperation;
 @RestController
 @RequestMapping("/api/user")
 public class UserController implements Resource<User, Long> {
-	private @Autowired UserService userBusiness;
+	private @Autowired UserService userService;
 	
 	@ApiOperation(value = "Serviço para obtenção de todos os usuários", nickname = "get", 
 			notes = "Obtenção de todos os usuários cadastrados no sistema")
 	@Override @RequestMapping(method = RequestMethod.GET) @ResponseStatus(value = HttpStatus.OK)
-	public @ResponseBody User get() {
-		return null;
+	public @ResponseBody List<User> get() {
+		return userService.getAll();
 	}
 	
 	@Override
@@ -34,18 +36,16 @@ public class UserController implements Resource<User, Long> {
 	@ApiOperation(value = "Serviço para criação de usuário", nickname = "create", notes = "Criação de um novo usuário")
 	@Override @RequestMapping(method = RequestMethod.POST) @ResponseStatus(value = HttpStatus.CREATED) 
 	public User post(final @RequestBody User entity) {
-		return userBusiness.create(entity);
+		return userService.create(entity);
 	}
 
 	@Override
 	public User put(User entity) {
-		// TODO PUT METHOD
 		return null;
 	}
 
 	@Override
 	public User delete(User entity) {
-		// TODO DELETE METHOD
 		return null;
 	}
 

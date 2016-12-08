@@ -1,7 +1,11 @@
 package br.com.gmf.api.services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.google.common.collect.Lists;
 
 import br.com.gmf.api.repository.UserRepository;
 import br.com.gmf.api.services.entity.User;
@@ -22,5 +26,9 @@ public class UserService {
 		} else {
 			throw new RuntimeException(USER_ALREADY_EXISTS);
 		}
+	}
+	
+	public List<User> getAll() {
+		return Lists.newArrayList(userDAO.findAll());
 	}
 }

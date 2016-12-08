@@ -6,6 +6,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -21,6 +23,7 @@ public @Data class User implements Serializable {
 	
 	@Id
 	@GeneratedValue
+	@JsonIgnore
 	private Long id;
 	private String name;
 	private String login;

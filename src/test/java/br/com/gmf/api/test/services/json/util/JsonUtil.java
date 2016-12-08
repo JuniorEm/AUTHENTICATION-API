@@ -26,9 +26,8 @@ public class JsonUtil {
 				throw new RuntimeException(e);
 			}
 		});
-
 	}
-
+	
 	public static <E> void assertNumberJsonPath(final JacksonTester<E> jacksonTester, final E entity,
 			final String... args) {
 		final List<String> asList = Arrays.asList(args);
